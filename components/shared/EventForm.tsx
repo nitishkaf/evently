@@ -158,15 +158,15 @@ const EventForm = ({ userId, type }: EventFormProps) => {
                     />
                     <p className="ml-3 whitespace-nowrap text-grey-500">
                       Start Date:
-                      <DatePicker
-                        selected={field.value}
-                        onChange={(date: Date) => field.onChange(date)}
-                        showTimeSelect
-                        timeInputLabel="Time:"
-                        dateFormat="MM/dd/yyyy h:mm aa"
-                        wrapperClassName="datePicker"
-                      />
                     </p>
+                    <DatePicker
+                      selected={field.value}
+                      onChange={(date: Date) => field.onChange(date)}
+                      showTimeSelect
+                      timeInputLabel="Time:"
+                      dateFormat="MM/dd/yyyy h:mm aa"
+                      wrapperClassName="datePicker"
+                    />
                   </div>
                 </FormControl>
                 <FormMessage />
