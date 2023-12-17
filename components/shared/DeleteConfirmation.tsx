@@ -1,5 +1,4 @@
 "use client";
-
 import { usePathname } from "next/navigation";
 import React, { useTransition } from "react";
 import {
@@ -16,7 +15,7 @@ import {
 import Image from "next/image";
 import { deleteEvent } from "@/lib/actions/event.actions";
 
-const DeleteConfirmation = ({ eventId }: { eventId: string }) => {
+export const DeleteConfirmation = ({ eventId }: { eventId: string }) => {
   const pathname = usePathname();
   let [isPending, startTransition] = useTransition();
   return (
@@ -52,5 +51,3 @@ const DeleteConfirmation = ({ eventId }: { eventId: string }) => {
     </AlertDialog>
   );
 };
-
-export default DeleteConfirmation;
